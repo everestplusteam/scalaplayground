@@ -13,7 +13,6 @@ class ImplicitContextPlay {
     def addKeyValue(key: String, value: String): Map[String, String] = {
         context + (key -> value)
     }
-
 }
 
 class ImplicitContextUser {

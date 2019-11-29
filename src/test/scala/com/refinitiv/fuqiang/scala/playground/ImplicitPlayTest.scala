@@ -21,6 +21,10 @@ class ImplicitPlayTest extends WordSpecLike with Matchers with BeforeAndAfterEac
         assert(123 == implicitPlay.convertToType[Int]("123"))
     }
 
+    "Convert Int failed" in {
+        assert(123 == implicitPlay.convertToType[Int]("100"))
+    }
+
     "Convert Double" in {
         assert(1.23 == implicitPlay.convertToType[Double]("1.23"))
     }
